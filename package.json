@@ -1,0 +1,39 @@
+{
+  "_from": "demo-iotest@latest",
+  "_id": "demo-iotest@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-YhflvbTmOnwDyFwd3spBn6ef9BWQ1sxGCplnVg0FdpPYgHqHgWx200NnVNN0be7yiPnDFXng5kqg2u8BJFiCBg==",
+  "_location": "/demo-iotest",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "demo-iotest@latest",
+    "name": "demo-iotest",
+    "escapedName": "demo-iotest",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/demo-iotest/-/demo-iotest-1.0.3.tgz",
+  "_shasum": "d849ebe71f4571d275f7679c0ba47d7fdcb3672d",
+  "_spec": "demo-iotest@latest",
+  "_where": "/Users/yanglin/node-package",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {},
+  "license": "ISC",
+  "main": "index.js",
+  "name": "demo-iotest",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
+}
