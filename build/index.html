@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IOING</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="write" />
+<meta name="format-detection" content="telephone=no" />
+
+<meta name="description" content="">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="logo.png">
+
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" sizes="192x192" href="logo.png">
+<link rel="apple-touch-icon" sizes="192x192" href="logo.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="theme-color" content="#ffffff">
+
+
+<!-- version: 0.0.0 -->
+<script id="ioing" src="static/ioing.js" root="static/"></script>
+  
+<script>"use strict";
+
+!function (e, n) {
+  if ("function" == typeof define && define.amd) define(App.config.root + "modules/frameworks/config", ["exports"], n);else if ("undefined" != typeof exports) n(exports);else {
+    var t = { exports: {} };n(t.exports), e.config = t.exports;
+  }
+}(undefined, function (e) {
+  "use strict";
+  e.__esModule = !0, e.default = { debug: 1, version: "1.0.2", resources: { script: {}, source: { index: "index.html" }, style: {}, data: {} }, config: { index: "test", singleflow: !1, singlelocking: !1, absolute: !1, style: [], script: [], source: ["index"], data: [], sandbox: !1, shadowbox: !1, animation: !0, design: 750 }, helper: {}, filter: function filter(e, n) {}, events: { transformstart: function transformstart() {} }, controller: {}, baseStyles: '\n    body:lang(zh-CN) {\n      font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Icons","Apple Legacy Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;\n    }\n    body {\n      font-family: "SF Pro Text","Myriad Set Pro",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","SF Pro Icons","Apple Legacy Icons","Helvetica Neue","Helvetica","Arial",sans-serif;\n    }\n    input, textarea, select, button {\n      font-synthesis: none;\n      -moz-font-feature-settings: \'kern\';\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n      direction: ltr;\n      text-align: left;\n    }t\n  ' };
+});</script>
+
+
+<template id="test/source/index" style="display:none">
+
+<script sync>"use strict";
+
+scope.cur = 0;</script>
+<scroll fullscreen>
+  <scrolling>
+    <loop lang as val i>
+      <h1 class="{{cur == i ? 'active' : ''}}">{val}</h1>
+    </loop>
+  </scrolling>
+</scroll>
+<script>"use strict";
+
+setInterval(function () {
+  if (scope.cur == scope.lang.length - 1) {
+    scope.cur = 0;
+  } else {
+    scope.cur++;
+  }
+}, 2500);</script>
+          
+</template>
+  
+
+
+
+<template id="test/style/main" style="display:none">
+
+h1 {
+  position: absolute;
+    width: 100%;
+    top: 45%;
+  font-size: 36dp;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s;
+}
+h1.active {
+  opacity: 1;
+}
+          
+</template>
+  
+
+<script>"use strict";
+
+!function (e, o) {
+  if ("function" == typeof define && define.amd) define(App.config.root + "modules/test/config", ["exports"], o);else if ("undefined" != typeof exports) o(exports);else {
+    var n = { exports: {} };o(n.exports), e.config = n.exports;
+  }
+}(undefined, function (e) {
+  "use strict";
+  Object.defineProperty(e, "__esModule", { value: !0 }), e.default = { resources: { script: {}, source: { index: "index.html" }, style: { main: "main.css" }, data: { lang: ["你好！", "Hello!", "こんにちは!", "안녕 하세요!", "bonjour!", "Hallo!", "Ciao!", "Hola!", "Здравствуйте!"] } }, config: { leve: 1, absolute: !0, background: "#fff", style: ["main"], script: [], source: ["index"], data: ["lang"], cache: 360, sandbox: !0, shadowbox: !1, animation: "slide" }, helper: {}, controller: {} };
+});</script>
+</head>
+<body>
+
+</body>
+</html>

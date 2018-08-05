@@ -7,7 +7,7 @@ module.exports = {
   },
   // 默认不需要修改，host 缺省时默认为 ip 访问，host 设置为域名时不能使用二维码和局域网访问
   browser: {
-    host: 'test.tmall.com',
+    // host: '',
     // href: 'index.html',
     // port: 8000,
     // https: false

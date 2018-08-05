@@ -12,7 +12,7 @@ export default {
     }
   },
   config: {
-    index: "home",
+    index: "test",
     singleflow: false,
     singlelocking: false,
     absolute: false,
